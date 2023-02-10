@@ -13,7 +13,7 @@ import { END_POINT, SCHEDULE_STARS } from './constants';
 const cn = classNames.bind(styles);
 
 export default function SectionSchedule({ academy }) {
-  const { data, isLoading, error } = useFetch(END_POINT + academy);
+  const { data, isLoading, error } = useFetch(END_POINT + `${academy}.json`);
 
   useEffect(() => {
     Aos.init();

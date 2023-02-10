@@ -1,4 +1,4 @@
-export const END_POINT = 'https://sfe-2022-data.netlify.app/api/media';
+export const END_POINT = 'https://sfe-2022-data.netlify.app/static/media.json';
 
 export const MEDIA_STARS = [
   { x: '24%', y: '0%' },

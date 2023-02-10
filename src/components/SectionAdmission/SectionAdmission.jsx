@@ -13,7 +13,11 @@ import { END_POINT, ADMISSION_STARS } from './constants';
 const cn = classNames.bind(styles);
 
 export default function SectionAdmission({ texts, academy }) {
-  const { data: dates, error, isLoading } = useFetch(END_POINT + academy);
+  const {
+    data: dates,
+    error,
+    isLoading,
+  } = useFetch(END_POINT + `${academy}.json`);
   const { heading, introduction, subjects, interview, calendar } = texts;
 
   let calendarDates;
